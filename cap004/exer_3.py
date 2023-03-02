@@ -1,0 +1,23 @@
+valores = list(map(int, input("Escreva 3 numeros: ").split()))
+ordem = valores[-3], valores[-2], valores[-1]
+a, b, c = sorted(ordem)[::-1]
+
+print(f"O menor numero digitado foi {round(c)}")
+print(f"O maior numero digitado foi {round(a)}")
+
+# RESPOSTA LIVRO
+a = int(input("Digite o primeiro valor:"))
+b = int(input("Digite o segundo valor:"))
+c = int(input("Digite o terceiro valor:"))
+maior = a
+if b > a and b > c:
+    maior = b
+if c > a and c > b:
+    maior = c
+menor = a
+if b < c and b < a:
+    menor = b
+if c < b and c < a:
+    menor = c
+print(f"O menor número digitado foi {menor}")
+print(f"O maior número digitado foi {maior}")

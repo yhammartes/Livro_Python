@@ -1,0 +1,9 @@
+V1 = int(input("Primeiro valor: "))
+V2 = int(input("Segundo valor: "))
+x = V1
+r = 0
+while x >= V2:
+    x = x - V2
+    r = r + 1
+resto = x
+print(f"{V1} ÷ {V2} = {r} Resto: {resto}")
